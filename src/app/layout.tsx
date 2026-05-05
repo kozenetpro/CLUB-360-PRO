@@ -5,7 +5,7 @@ import RightPanel from "@/components/layout/RightPanel";
 import MainGrid from "@/components/layout/MainGrid";
 import Footer from "@/components/layout/Footer";
 import { siteConfig } from "@/config/site";
-import { getAllPosts, getAllTags, getRecentPosts } from "@/lib/posts";
+import { getAllPosts, getAllTags, getRecentPosts, type PostMeta } from "@/lib/posts";
 import Topbar from "@/components/layout/Topbar";
 import MermaidInitializer from "@/components/content/MermaidInitializer";
 import { getDictionary } from "@/i18n/dictionaries";
@@ -16,6 +16,8 @@ import { getPostHref } from "@/lib/utils";
 const defaultDictionary = getDictionary(DEFAULT_LOCALE);
 
 type PostLanguageHrefs = Record<string, Partial<Record<Locale, string>>>;
+type LocalePosts = Record<Locale, PostMeta[]>;
+type LocaleTags = Record<Locale, { name: string; count: number }[]>;
 
 function getPostLanguageHrefs(): PostLanguageHrefs {
   const postsByTranslationKey = new Map<string, ReturnType<typeof getAllPosts>>();
@@ -44,6 +46,18 @@ function getPostLanguageHrefs(): PostLanguageHrefs {
   });
 
   return hrefs;
+}
+
+function getRecentPostsByLocale(): LocalePosts {
+  return Object.fromEntries(
+    LOCALES.map((locale) => [locale, getRecentPosts(5, undefined, locale)])
+  ) as LocalePosts;
+}
+
+function getTagsByLocale(): LocaleTags {
+  return Object.fromEntries(
+    LOCALES.map((locale) => [locale, getAllTags(locale).slice(0, 8)])
+  ) as LocaleTags;
 }
 
 export const metadata: Metadata = {
@@ -88,8 +102,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const recentPosts = getRecentPosts(5);
-  const tags = getAllTags().slice(0, 8);
+  const recentPostsByLocale = getRecentPostsByLocale();
+  const tagsByLocale = getTagsByLocale();
   const postLanguageHrefs = getPostLanguageHrefs();
 
   return (
@@ -116,7 +130,7 @@ export default function RootLayout({
                 <main className="min-w-0 flex-1 px-6 pt-6 pb-4 lg:px-8">
                   {children}
                 </main>
-                <RightPanel recentPosts={recentPosts} tags={tags} />
+                <RightPanel recentPostsByLocale={recentPostsByLocale} tagsByLocale={tagsByLocale} />
               </div>
             </div>
             <Footer />

@@ -1,4 +1,4 @@
-export type SiteSocialIcon = "github" | "linkedin" | "website" | "mail" | "rss";
+export type SiteSocialIcon = "github" | "linkedin" | "website" | "mail" | "rss" | "youtube";
 
 type SiteSocialLink = {
   href: string;
@@ -23,8 +23,9 @@ export const siteConfig = {
   repositoryUrl: "https://github.com/kozenetpro/club360-pro",
   socialLinks: [
     { href: "https://github.com/kozenetpro/club360-pro", label: "GitHub", icon: "github" },
-    { href: "https://kozenetpro.com", label: "Website", icon: "website" },
+    { href: "https://club360.kozenetpro.com", label: "Website", icon: "website" },
     { href: "/feed.xml", label: "RSS", icon: "rss" },
+    { href: "https://youtube.com/club360pro", label: "YouTube", icon: "youtube" },
   ] satisfies SiteSocialLink[],
   focusAreas: [
     "Cloud Computing",

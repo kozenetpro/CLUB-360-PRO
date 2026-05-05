@@ -17,6 +17,7 @@ import {
   Menu,
   X,
   Users,
+  PlayCircle,
 } from "lucide-react";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 import { useEffect, useState } from "react";
@@ -40,6 +41,7 @@ const SOCIAL_ICONS: Record<SiteSocialIcon, typeof Code2> = {
   website: Globe,
   mail: Mail,
   rss: Rss,
+  youtube: PlayCircle
 };
 
 interface SidebarProps {

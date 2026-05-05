@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Bot, BookOpen, Cloud, Code2, Globe, Mail, Shield, Users, Briefcase } from "lucide-react";
+import { Bot, BookOpen, Cloud, Code2, Globe, Mail, Shield, Users, Briefcase, Play } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { getDictionary } from "@/i18n/dictionaries";
 import type { Locale } from "@/i18n/locales";
@@ -11,6 +11,7 @@ const CONTACT_ICONS = {
   linkedin: Briefcase,
   website: Globe,
   mail: Mail,
+  youtube: Play,
 } as const;
 
 interface AboutViewProps {

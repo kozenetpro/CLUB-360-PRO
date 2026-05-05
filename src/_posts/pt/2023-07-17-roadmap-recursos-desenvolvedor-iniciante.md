@@ -5,6 +5,9 @@ date: 2023-07-17
 translationKey: developer-roadmap-resources
 categories: ["Aprendizado", "Carreira"]
 tags: ["desenvolvedor", "roadmap", "educação", "desenvolvimento-carreira"]
+collaborators:
+  - name: "Rubens Simon"
+    src: "https://avatars.githubusercontent.com/u/93041872?v=4"
 image:
   path: /images/covers/roadmapcover.webp
   alt: "Ilustração representando um roadmap para desenvolvedores iniciantes"

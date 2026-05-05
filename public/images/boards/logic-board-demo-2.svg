@@ -1,0 +1,23 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" rx="32" fill="#FCFCFD"/>
+  <path d="M0 80H1600M0 160H1600M0 240H1600M0 320H1600M0 400H1600M0 480H1600M0 560H1600M0 640H1600M0 720H1600M0 800H1600M0 880H1600" stroke="#EEF2F7"/>
+  <text x="118" y="130" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700">Boolean Logic</text>
+  <rect x="122" y="220" width="365" height="130" rx="26" stroke="#2563EB" stroke-width="10"/>
+  <rect x="122" y="405" width="365" height="130" rx="26" stroke="#2563EB" stroke-width="10"/>
+  <rect x="122" y="590" width="365" height="130" rx="26" stroke="#2563EB" stroke-width="10"/>
+  <text x="162" y="300" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="48">5 &gt; 2  = true</text>
+  <text x="162" y="485" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="48">5 &lt; 2  = false</text>
+  <text x="162" y="670" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="48">x == y ?</text>
+  <circle cx="860" cy="250" r="68" stroke="#16A34A" stroke-width="12"/>
+  <circle cx="1130" cy="250" r="68" stroke="#DC2626" stroke-width="12"/>
+  <text x="816" y="264" fill="#16A34A" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">T</text>
+  <text x="1090" y="264" fill="#DC2626" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">F</text>
+  <path d="M758 250H584" stroke="#2563EB" stroke-width="12" stroke-linecap="round"/>
+  <path d="M1042 250H928" stroke="#2563EB" stroke-width="12" stroke-linecap="round"/>
+  <rect x="700" y="435" width="545" height="265" rx="28" stroke="#2563EB" stroke-width="10"/>
+  <text x="742" y="508" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="40">Ask:</text>
+  <text x="742" y="576" fill="#2563EB" font-family="Arial, Helvetica, sans-serif" font-size="38">What condition are we checking?</text>
+  <text x="742" y="636" fill="#2563EB" font-family="Arial, Helvetica, sans-serif" font-size="38">What answer can come back?</text>
+  <text x="742" y="696" fill="#2563EB" font-family="Arial, Helvetica, sans-serif" font-size="38">How will the program react?</text>
+  <text x="118" y="858" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="34">Boolean explanations become easier when learners can point to true and false visually.</text>
+</svg>

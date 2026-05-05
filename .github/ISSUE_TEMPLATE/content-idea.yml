@@ -1,0 +1,24 @@
+name: Content idea
+description: Suggest a lesson, article, translation, or improvement.
+title: "[Content]: "
+labels: ["content"]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      description: What should this content explain?
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: Audience
+      description: Who is this for, and what should they know before reading?
+    validations:
+      required: true
+  - type: textarea
+    id: outline
+    attributes:
+      label: Suggested outline
+      description: Add any sections, examples, diagrams, or references you want included.

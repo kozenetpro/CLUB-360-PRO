@@ -1,0 +1,25 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" rx="32" fill="#FCFCFD"/>
+  <path d="M0 80H1600M0 160H1600M0 240H1600M0 320H1600M0 400H1600M0 480H1600M0 560H1600M0 640H1600M0 720H1600M0 800H1600M0 880H1600" stroke="#EEF2F7"/>
+  <path d="M120 150H560" stroke="#2563EB" stroke-width="10" stroke-linecap="round"/>
+  <path d="M120 260H600" stroke="#3B82F6" stroke-width="10" stroke-linecap="round"/>
+  <path d="M120 370H540" stroke="#60A5FA" stroke-width="10" stroke-linecap="round"/>
+  <path d="M120 480H650" stroke="#2563EB" stroke-width="10" stroke-linecap="round"/>
+  <rect x="760" y="130" width="320" height="120" rx="26" stroke="#2563EB" stroke-width="10"/>
+  <rect x="760" y="280" width="370" height="120" rx="26" stroke="#2563EB" stroke-width="10"/>
+  <rect x="760" y="430" width="330" height="120" rx="26" stroke="#2563EB" stroke-width="10"/>
+  <rect x="760" y="580" width="410" height="120" rx="26" stroke="#2563EB" stroke-width="10"/>
+  <text x="125" y="135" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">Variables and Types</text>
+  <text x="130" y="236" fill="#2563EB" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">int</text>
+  <text x="130" y="346" fill="#2563EB" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">string</text>
+  <text x="130" y="456" fill="#2563EB" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">float</text>
+  <text x="130" y="566" fill="#2563EB" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">boolean</text>
+  <text x="820" y="208" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="44">age = 18</text>
+  <text x="820" y="358" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="44">name = "Rubens"</text>
+  <text x="820" y="508" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="44">price = 10.5</text>
+  <text x="820" y="658" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="44">is_ready = true</text>
+  <path d="M1270 180C1360 160 1435 172 1494 214" stroke="#F97316" stroke-width="12" stroke-linecap="round"/>
+  <path d="M1270 420C1358 390 1448 397 1510 446" stroke="#F97316" stroke-width="12" stroke-linecap="round"/>
+  <path d="M1230 770C1330 735 1438 747 1500 810" stroke="#2563EB" stroke-width="12" stroke-linecap="round"/>
+  <text x="1210" y="866" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="34">Start with examples learners can read fast.</text>
+</svg>

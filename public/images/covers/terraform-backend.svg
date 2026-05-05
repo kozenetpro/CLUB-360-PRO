@@ -1,0 +1,23 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="36" fill="#0F172A"/>
+  <rect x="42" y="42" width="1116" height="546" rx="28" fill="url(#paint0_linear_2_11)" fill-opacity="0.22" stroke="#334155"/>
+  <circle cx="1046" cy="146" r="108" fill="#38BDF8" fill-opacity="0.18"/>
+  <circle cx="208" cy="532" r="132" fill="#2563EB" fill-opacity="0.15"/>
+  <rect x="106" y="140" width="354" height="218" rx="20" fill="#111827" stroke="#60A5FA" stroke-opacity="0.4"/>
+  <rect x="144" y="184" width="120" height="18" rx="9" fill="#38BDF8"/>
+  <rect x="144" y="224" width="208" height="14" rx="7" fill="#E2E8F0" fill-opacity="0.88"/>
+  <rect x="144" y="252" width="170" height="14" rx="7" fill="#CBD5E1" fill-opacity="0.78"/>
+  <rect x="144" y="292" width="278" height="32" rx="16" fill="#1D4ED8"/>
+  <path d="M592 184H1048" stroke="#60A5FA" stroke-width="8" stroke-linecap="round"/>
+  <path d="M592 264H944" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M592 344H1008" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M592 424H888" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+  <text x="106" y="456" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">Terraform Remote Backend</text>
+  <text x="106" y="512" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="28">AWS S3, DynamoDB, and a cleaner IaC workflow</text>
+  <defs>
+    <linearGradient id="paint0_linear_2_11" x1="42" y1="42" x2="1158" y2="588" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+</svg>

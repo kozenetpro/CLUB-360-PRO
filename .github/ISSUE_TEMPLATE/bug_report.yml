@@ -1,0 +1,22 @@
+name: Bug report
+description: Report a problem with the site or content rendering.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page URL or file path
+      description: Link the affected page or mention the local file.
+  - type: textarea
+    id: details
+    attributes:
+      label: Extra details
+      description: Browser, screenshots, terminal output, or anything else useful.

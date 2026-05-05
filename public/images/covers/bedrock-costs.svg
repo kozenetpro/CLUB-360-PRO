@@ -1,0 +1,21 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="36" fill="#0F172A"/>
+  <rect x="44" y="44" width="1112" height="542" rx="28" fill="url(#paint0_linear_5_4)" fill-opacity="0.18" stroke="#334155"/>
+  <circle cx="1006" cy="172" r="116" fill="#60A5FA" fill-opacity="0.14"/>
+  <rect x="118" y="164" width="286" height="298" rx="24" fill="#111827" stroke="#60A5FA" stroke-opacity="0.45"/>
+  <circle cx="261" cy="266" r="82" fill="#1D4ED8" fill-opacity="0.26"/>
+  <path d="M228 266H294" stroke="#E2E8F0" stroke-width="10" stroke-linecap="round"/>
+  <path d="M261 234V298" stroke="#E2E8F0" stroke-width="10" stroke-linecap="round"/>
+  <path d="M520 214H1054" stroke="#60A5FA" stroke-width="10" stroke-linecap="round"/>
+  <path d="M520 300H990" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+  <path d="M520 380H1090" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round"/>
+  <path d="M520 460H924" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round"/>
+  <text x="118" y="522" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="700">Bedrock Cost Visibility</text>
+  <text x="118" y="570" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="28">Inference profiles, budgets, and cleaner allocation signals</text>
+  <defs>
+    <linearGradient id="paint0_linear_5_4" x1="44" y1="44" x2="1156" y2="586" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+</svg>

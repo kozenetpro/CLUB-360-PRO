@@ -1,0 +1,22 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="36" fill="#111827"/>
+  <rect x="46" y="46" width="1108" height="538" rx="28" fill="url(#paint0_linear_6_5)" fill-opacity="0.18" stroke="#334155"/>
+  <circle cx="964" cy="180" r="118" fill="#F97316" fill-opacity="0.14"/>
+  <path d="M128 428C224 354 320 328 414 350C508 372 594 446 694 452C794 458 900 392 1032 266" stroke="#FB923C" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="260" cy="282" r="22" fill="#FDE68A"/>
+  <path d="M256 304L224 372" stroke="#FDE68A" stroke-width="12" stroke-linecap="round"/>
+  <path d="M256 324L306 360" stroke="#FDE68A" stroke-width="12" stroke-linecap="round"/>
+  <path d="M224 372L188 434" stroke="#FDE68A" stroke-width="12" stroke-linecap="round"/>
+  <path d="M280 366L324 430" stroke="#FDE68A" stroke-width="12" stroke-linecap="round"/>
+  <path d="M482 188H1008" stroke="#FDE68A" stroke-width="10" stroke-linecap="round"/>
+  <path d="M482 268H1100" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+  <path d="M482 348H986" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round"/>
+  <text x="118" y="520" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">Marathon Discipline for Builders</text>
+  <text x="118" y="570" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="28">Consistency, pacing, and long-term execution</text>
+  <defs>
+    <linearGradient id="paint0_linear_6_5" x1="46" y1="46" x2="1154" y2="584" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F97316"/>
+      <stop offset="1" stop-color="#FB7185"/>
+    </linearGradient>
+  </defs>
+</svg>

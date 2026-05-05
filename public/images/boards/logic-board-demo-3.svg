@@ -1,0 +1,19 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" rx="32" fill="#FCFCFD"/>
+  <path d="M0 80H1600M0 160H1600M0 240H1600M0 320H1600M0 400H1600M0 480H1600M0 560H1600M0 640H1600M0 720H1600M0 800H1600M0 880H1600" stroke="#EEF2F7"/>
+  <text x="120" y="132" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700">Teaching Flow</text>
+  <rect x="118" y="240" width="312" height="138" rx="28" stroke="#2563EB" stroke-width="10"/>
+  <rect x="645" y="240" width="312" height="138" rx="28" stroke="#2563EB" stroke-width="10"/>
+  <rect x="1170" y="240" width="312" height="138" rx="28" stroke="#2563EB" stroke-width="10"/>
+  <text x="182" y="322" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="42">Concept</text>
+  <text x="690" y="322" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="42">Example</text>
+  <text x="1226" y="322" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="42">Exercise</text>
+  <path d="M442 309H620" stroke="#F97316" stroke-width="12" stroke-linecap="round"/>
+  <path d="M970 309H1144" stroke="#F97316" stroke-width="12" stroke-linecap="round"/>
+  <rect x="206" y="518" width="1188" height="222" rx="32" fill="#EFF6FF" stroke="#60A5FA" stroke-width="8"/>
+  <text x="268" y="592" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700">Question:</text>
+  <text x="268" y="664" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="40">If score &gt;= 7, what should the program print?</text>
+  <text x="268" y="726" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="40">Try to predict the answer before running the code.</text>
+  <path d="M230 830C434 770 620 780 794 844C978 914 1170 912 1380 844" stroke="#2563EB" stroke-width="12" stroke-linecap="round"/>
+  <text x="110" y="914" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="34">The board is strongest when it moves from idea to action, not only explanation.</text>
+</svg>

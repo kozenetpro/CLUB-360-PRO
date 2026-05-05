@@ -1,0 +1,26 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="36" fill="#111827"/>
+  <rect x="46" y="46" width="1108" height="538" rx="28" fill="url(#paint0_linear_4_6)" fill-opacity="0.19" stroke="#334155"/>
+  <circle cx="210" cy="146" r="100" fill="#F59E0B" fill-opacity="0.15"/>
+  <rect x="118" y="154" width="438" height="282" rx="22" fill="#0F172A" stroke="#FBBF24" stroke-opacity="0.42"/>
+  <rect x="118" y="154" width="438" height="52" rx="22" fill="#1F2937"/>
+  <circle cx="162" cy="180" r="8" fill="#F87171"/>
+  <circle cx="190" cy="180" r="8" fill="#FBBF24"/>
+  <circle cx="218" cy="180" r="8" fill="#34D399"/>
+  <path d="M164 246H362" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M164 292H494" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+  <path d="M164 336H462" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round"/>
+  <path d="M164 380H384" stroke="#FBBF24" stroke-width="8" stroke-linecap="round"/>
+  <path d="M654 186H1042" stroke="#FBBF24" stroke-width="10" stroke-linecap="round"/>
+  <path d="M654 266H1102" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+  <path d="M654 346H990" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round"/>
+  <path d="M654 426H1084" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round"/>
+  <text x="118" y="512" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="700">Chirpy on AWS Cloud9</text>
+  <text x="118" y="562" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="28">Repeatable documentation workflows and publishing habits</text>
+  <defs>
+    <linearGradient id="paint0_linear_4_6" x1="46" y1="46" x2="1154" y2="584" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+</svg>

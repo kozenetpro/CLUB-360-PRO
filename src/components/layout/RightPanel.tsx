@@ -8,11 +8,11 @@ import TrendingTagsSection from "@/components/panel/TrendingTagsSection";
 import TableOfContents from "@/components/posts/TableOfContents";
 import { getPostSlugFromPathname, isPostPath } from "@/lib/utils";
 import { getDictionary } from "@/i18n/dictionaries";
-import { getLocaleFromPathname } from "@/i18n/locales";
+import { getLocaleFromPathname, type Locale } from "@/i18n/locales";
 
 interface RightPanelProps {
-  recentPosts: PostMeta[];
-  tags: { name: string; count: number }[];
+  recentPostsByLocale: Record<Locale, PostMeta[]>;
+  tagsByLocale: Record<Locale, { name: string; count: number }[]>;
 }
 
 interface Heading {
@@ -21,18 +21,12 @@ interface Heading {
   level: number;
 }
 
-export default function RightPanel({ recentPosts, tags }: RightPanelProps) {
+export default function RightPanel({ recentPostsByLocale, tagsByLocale }: RightPanelProps) {
   const pathname = usePathname();
   const locale = getLocaleFromPathname(pathname);
   const dictionary = getDictionary(locale);
-  const localizedRecentPosts = useMemo(
-    () => recentPosts.filter((post) => post.lang === locale),
-    [locale, recentPosts]
-  );
-  const localizedTags = useMemo(
-    () => tags.filter((tag) => tag.count > 0),
-    [tags]
-  );
+  const localizedRecentPosts = recentPostsByLocale[locale] ?? [];
+  const localizedTags = tagsByLocale[locale] ?? [];
   const [headings, setHeadings] = useState<Heading[]>([]);
   const isPostPage = isPostPath(pathname);
   const currentSlug = useMemo(
@@ -64,7 +58,7 @@ export default function RightPanel({ recentPosts, tags }: RightPanelProps) {
 
   return (
     <aside
-      className="hidden xl:block w-[var(--panel-width)] shrink-0 border-l px-5 pb-10 pt-6"
+      className="hidden xl:block w-(--panel-width) shrink-0 border-l px-5 pb-10 pt-6"
       style={{ borderColor: "var(--border-color)" }}
     >
       <div className="access animate-fade-in">

@@ -58,7 +58,7 @@ export default function RightPanel({ recentPostsByLocale, tagsByLocale }: RightP
 
   return (
     <aside
-      className="hidden xl:block w-(--panel-width) shrink-0 border-l px-5 pb-10 pt-6"
+      className="right-panel hidden w-(--panel-width) shrink-0 border-l px-5 pb-10 pt-6 xl:block"
       style={{ borderColor: "var(--border-color)" }}
     >
       <div className="access animate-fade-in">

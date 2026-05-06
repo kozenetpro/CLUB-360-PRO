@@ -18,6 +18,7 @@ function getSegmentLabel(segment: string, dictionary: ReturnType<typeof getDicti
     about: dictionary.nav.about,
     archives: dictionary.nav.archives,
     categories: dictionary.nav.categories,
+    game: dictionary.nav.game,
     members: dictionary.nav.members,
     posts: dictionary.common.posts,
     search: dictionary.nav.search,

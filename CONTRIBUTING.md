@@ -11,6 +11,16 @@ Thank you for helping Club 360 Pro grow as an open learning project.
 - UI and accessibility improvements
 - Documentation improvements
 
+## Contributor Guides
+
+Start with the documentation index:
+
+- [documentations/README.md](documentations/README.md)
+
+For interactive practice questions, read:
+
+- [documentations/game-quiz.md](documentations/game-quiz.md)
+
 ## Content Rules
 
 - Write for learners. Prefer clear examples over vague advice.
@@ -18,6 +28,7 @@ Thank you for helping Club 360 Pro grow as an open learning project.
 - Use `collaborators` in frontmatter when a post has contributors.
 - Add meaningful alt text for images.
 - Cite sources when a post depends on external material.
+- Put Game practice questions inside article `quiz` blocks so the article and Game reuse the same source content.
 
 ## Pull Request Checklist
 

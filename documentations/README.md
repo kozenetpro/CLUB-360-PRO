@@ -8,6 +8,7 @@ Start here when contributing content or maintaining the site.
 - [Multi-language guide](multi-language.md): how article translations and interface translations are organized.
 - [Fast image guide](fast-image.md): how to prepare optimized cover images and visual assets.
 - [Board content guide](board-content.md): how to create teaching-friendly board visuals and structured explanations.
+- [Game and quiz authoring guide](game-quiz.md): how article `quiz` blocks become interactive Game training sets.
 
 ## Root Project Docs
 

@@ -23,20 +23,19 @@ function SearchInputInner({ initialQuery }: { initialQuery: string }) {
       clearTimeout(debounceTimer.current);
     }
 
-    // Only update URL if on search page, and only after debounce
-    if (normalizedPathname === "/search") {
-      debounceTimer.current = setTimeout(() => {
-        if (query.trim()) {
-          startTransition(() => {
-            router.push(`${searchPath}?q=${encodeURIComponent(query.trim())}`);
-          });
-        } else {
-          startTransition(() => {
-            router.push(searchPath);
-          });
-        }
-      }, 500); // Longer debounce for better UX
-    }
+    // Update URL with search query, navigating to search page if needed
+    debounceTimer.current = setTimeout(() => {
+      if (query.trim()) {
+        startTransition(() => {
+          router.push(`${searchPath}?q=${encodeURIComponent(query.trim())}`);
+        });
+      } else if (normalizedPathname === "/search") {
+        // Only clear if already on search page
+        startTransition(() => {
+          router.push(searchPath);
+        });
+      }
+    }, 300); // Reduced debounce for faster feedback
 
     return () => {
       if (debounceTimer.current) {

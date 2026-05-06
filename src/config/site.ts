@@ -9,6 +9,7 @@ type SiteSocialLink = {
 export const siteRoutes = {
   home: "/",
   members: "/members",
+  game: "/game",
   categories: "/categories",
   tags: "/tags",
   archives: "/archives",
@@ -25,7 +26,7 @@ export const siteConfig = {
     { href: "https://github.com/kozenetpro/club360-pro", label: "GitHub", icon: "github" },
     { href: "https://club360.kozenetpro.com", label: "Website", icon: "website" },
     { href: "/feed.xml", label: "RSS", icon: "rss" },
-    { href: "https://youtube.com/club360pro", label: "YouTube", icon: "youtube" },
+    { href: "https://youtube.com/@club360pro", label: "YouTube", icon: "youtube" },
   ] satisfies SiteSocialLink[],
   focusAreas: [
     "Cloud Computing",

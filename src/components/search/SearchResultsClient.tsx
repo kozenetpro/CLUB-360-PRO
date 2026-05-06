@@ -8,23 +8,92 @@ import { getDictionary } from "@/i18n/dictionaries";
 import type { Locale } from "@/i18n/locales";
 import { localizePath } from "@/i18n/locales";
 import type { PostMeta } from "@/lib/posts";
+import {
+  getSearchDocuments,
+  type SearchDocument,
+  type SearchTrainingDocument,
+  type SearchTrainingSource,
+} from "@/lib/search-documents";
+
+const MAX_VISIBLE_RESULTS = 40;
+const MIN_QUERY_LENGTH = 2;
 
 interface SearchResultsClientProps {
   query: string;
   posts: PostMeta[];
   locale: Locale;
+  trainingSets: SearchTrainingSource[];
 }
 
-export default function SearchResultsClient({ query, posts, locale }: SearchResultsClientProps) {
+function TrainingResultCard({
+  result,
+  locale,
+}: {
+  result: SearchTrainingDocument;
+  locale: Locale;
+}) {
   const dictionary = getDictionary(locale);
-  // Ensure posts is an array and filter out any invalid entries
-  const validPosts = (Array.isArray(posts) ? posts : []).filter(
-    (post) => post && post.slug && typeof post.slug === "string"
+
+  return (
+    <article
+      className="post-card group animate-fade-in overflow-hidden rounded-2xl border transition-all duration-300"
+      style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}
+    >
+      <div className="p-5 sm:p-6">
+        <div className="mb-3 flex flex-wrap items-center gap-2">
+          <span className="game-chip">{dictionary.game.training}</span>
+          {result.categories.slice(0, 3).map((category) => (
+            <span key={category} className="game-chip">
+              {category}
+            </span>
+          ))}
+        </div>
+        <Link href={result.href}>
+          <h2
+            className="mb-2 text-xl font-semibold leading-snug transition-colors duration-200 group-hover:text-[var(--accent)]"
+            style={{ color: "var(--text-primary)" }}
+          >
+            {result.title}
+          </h2>
+        </Link>
+        <p className="text-sm leading-7" style={{ color: "var(--text-secondary)" }}>
+          {result.description}
+        </p>
+        <p
+          className="mt-3 text-xs font-semibold uppercase tracking-[0.18em]"
+          style={{ color: "var(--text-muted)" }}
+        >
+          {result.questionCount} {dictionary.game.questions}
+        </p>
+      </div>
+    </article>
+  );
+}
+
+export default function SearchResultsClient({
+  query,
+  posts,
+  locale,
+  trainingSets,
+}: SearchResultsClientProps) {
+  const dictionary = getDictionary(locale);
+  const normalizedQuery = query.trim();
+  const canSearch = normalizedQuery.length >= MIN_QUERY_LENGTH;
+  const validPosts = useMemo(
+    () =>
+      (Array.isArray(posts) ? posts : []).filter(
+        (post) => post && post.slug && typeof post.slug === "string"
+      ),
+    [posts]
+  );
+  const documents = useMemo(
+    () => getSearchDocuments(validPosts, locale, trainingSets),
+    [locale, trainingSets, validPosts]
   );
 
   const fuse = useMemo(
     () =>
-      new Fuse(validPosts, {
+      new Fuse(documents, {
         includeScore: true,
         threshold: 0.34,
         keys: [
@@ -34,16 +103,17 @@ export default function SearchResultsClient({ query, posts, locale }: SearchResu
           { name: "categories", weight: 0.1 },
         ],
       }),
-    [validPosts]
+    [documents]
   );
 
   const results = useMemo(
     () =>
-      query.trim()
-        ? fuse.search(query.trim()).map((result) => result.item).filter(Boolean)
+      canSearch
+        ? fuse.search(normalizedQuery).map((result) => result.item).filter(Boolean)
         : [],
-    [fuse, query]
+    [canSearch, fuse, normalizedQuery]
   );
+  const visibleResults = results.slice(0, MAX_VISIBLE_RESULTS);
 
   return (
     <div>
@@ -51,7 +121,6 @@ export default function SearchResultsClient({ query, posts, locale }: SearchResu
         className="hero-card mb-6 rounded-2xl border p-5 animate-fade-in sm:p-6"
         style={{ background: "var(--bg-card)", borderColor: "var(--border-color)" }}
       >
-
         <h2
           className="mb-4 text-xl font-semibold"
           style={{ color: "var(--text-primary)" }}
@@ -59,13 +128,14 @@ export default function SearchResultsClient({ query, posts, locale }: SearchResu
           {query ? `${dictionary.search.resultsFor} "${query}"` : dictionary.search.noQuery}
         </h2>
 
-        {query && (
+        {query && canSearch && (
           <p
             className="text-sm"
             style={{ color: "var(--text-secondary)" }}
           >
             {dictionary.search.found} {results.length}{" "}
             {results.length === 1 ? dictionary.search.result : dictionary.search.results}
+            {results.length > MAX_VISIBLE_RESULTS ? ` · ${dictionary.search.showingTop} ${MAX_VISIBLE_RESULTS}` : ""}
           </p>
         )}
       </section>
@@ -78,7 +148,11 @@ export default function SearchResultsClient({ query, posts, locale }: SearchResu
             style={{ color: "var(--text-muted)" }}
           >
             <p className="mb-4">
-              {query ? dictionary.search.empty : dictionary.search.start}
+              {query && !canSearch
+                ? dictionary.search.minimumLength
+                : query
+                  ? dictionary.search.empty
+                  : dictionary.search.start}
             </p>
             <Link
               href={localizePath("/", locale)}
@@ -89,7 +163,13 @@ export default function SearchResultsClient({ query, posts, locale }: SearchResu
             </Link>
           </div>
         ) : (
-          results.map((post) => <PostCard key={post.slug} post={post} />)
+          visibleResults.map((result: SearchDocument) =>
+            result.kind === "post" ? (
+              <PostCard key={result.slug} post={result} />
+            ) : (
+              <TrainingResultCard key={result.id} result={result} locale={locale} />
+            )
+          )
         )}
       </div>
     </div>

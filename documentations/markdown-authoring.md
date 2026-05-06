@@ -10,6 +10,7 @@ It covers the blocks you can use when writing:
 - math notes
 - university explanations
 - board-based teaching posts
+- Game training questions
 
 ## Where To Create Posts
 
@@ -195,6 +196,39 @@ Use this when the explanation needs progression:
 For more board-specific ideas, read:
 
 - [board-content.md](board-content.md)
+
+## `quiz` Blocks for Game Training
+
+Use a fenced `quiz` block when an article should also create practice questions for the Game page.
+
+````md
+```quiz
+{
+  "id": "binary-1011-decimal",
+  "question": "What is 1011_2 in decimal?",
+  "image": "/images/boards/binario-para-decimal-step-4.svg",
+  "options": ["9_10", "10_10", "11_10", "13_10"],
+  "answer": 2,
+  "explanation": "1011_2 = 1x8 + 0x4 + 1x2 + 1x1 = 11_10.",
+  "tags": ["binary", "conversion"],
+  "timeLimit": 35
+}
+```
+````
+
+Important details:
+
+- `question`, `options`, and `answer` are required.
+- `options` needs at least two choices.
+- `answer` is zero-based, so `0` is the first option.
+- `timeLimit` is in seconds. If omitted, the default is `30`.
+- `image` should point to a file inside `public/`, such as `/images/boards/example.svg`.
+
+One post with valid `quiz` blocks becomes one Game training set automatically. The training title and description come from the post frontmatter.
+
+For the complete workflow, read:
+
+- [game-quiz.md](game-quiz.md)
 
 ## Code Blocks
 

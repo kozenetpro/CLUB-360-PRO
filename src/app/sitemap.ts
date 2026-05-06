@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routePriorities = {
     [siteRoutes.home]: 1,
     [siteRoutes.about]: 0.6,
+    [siteRoutes.game]: 0.8,
     [siteRoutes.categories]: 0.7,
     [siteRoutes.tags]: 0.7,
     [siteRoutes.archives]: 0.6,

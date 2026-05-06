@@ -18,6 +18,7 @@ import {
   X,
   Users,
   PlayCircle,
+  Gamepad2,
 } from "lucide-react";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 import { useEffect, useState } from "react";
@@ -30,6 +31,7 @@ const NAV_ICONS = {
   [siteRoutes.home]: Home,
   [siteRoutes.categories]: FolderOpen,
   [siteRoutes.tags]: Tags,
+  [siteRoutes.game]: Gamepad2,
   [siteRoutes.archives]: Archive,
   [siteRoutes.members]: Users,
   [siteRoutes.about]: User,
@@ -58,6 +60,7 @@ export default function Sidebar({ postLanguageHrefs }: SidebarProps) {
   const navItems = [
     { href: siteRoutes.home, label: dictionary.nav.home },
     { href: siteRoutes.members, label: dictionary.nav.members },
+    { href: siteRoutes.game, label: dictionary.nav.game },
     { href: siteRoutes.categories, label: dictionary.nav.categories },
     { href: siteRoutes.tags, label: dictionary.nav.tags },
     { href: siteRoutes.archives, label: dictionary.nav.archives },

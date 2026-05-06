@@ -8,6 +8,7 @@ import { siteConfig } from "@/config/site";
 import { getAllPosts, getAllTags, getRecentPosts, type PostMeta } from "@/lib/posts";
 import Topbar from "@/components/layout/Topbar";
 import MermaidInitializer from "@/components/content/MermaidInitializer";
+import RouteBodyClass from "@/components/layout/RouteBodyClass";
 import { getDictionary } from "@/i18n/dictionaries";
 import { DEFAULT_LOCALE, LOCALES, type Locale, localizePath } from "@/i18n/locales";
 import ThemeInitScript from "@/components/theme/ThemeInitScript";
@@ -125,9 +126,9 @@ export default function RootLayout({
 
           <div className="min-w-0 flex min-h-screen flex-col">
             <Topbar />
-            <div className="flex flex-1 min-h-0 justify-center">
-              <div className="flex min-w-0 max-w-6xl flex-1">
-                <main className="min-w-0 flex-1 px-6 pt-6 pb-4 lg:px-8">
+            <div className="app-content-wrap flex flex-1 min-h-0 justify-center">
+              <div className="app-content-frame flex min-w-0 max-w-6xl flex-1">
+                <main className="app-main min-w-0 flex-1 px-6 pt-6 pb-4 lg:px-8">
                   {children}
                 </main>
                 <RightPanel recentPostsByLocale={recentPostsByLocale} tagsByLocale={tagsByLocale} />
@@ -136,6 +137,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </MainGrid>
+        <RouteBodyClass />
         <MermaidInitializer />
       </body>
     </html>

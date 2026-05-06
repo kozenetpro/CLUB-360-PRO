@@ -4,6 +4,7 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypePrettyCode from "rehype-pretty-code";
 import { mdxComponents } from "@/components/content/mdx-components";
+import { parseQuizBlock } from "@/lib/quiz-blocks";
 
 function normalizeText(source: string) {
   return source.trim().toLowerCase().replace(/\s+/g, " ");
@@ -13,7 +14,9 @@ function escapeHtml(source: string) {
   return source
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
+    .replace(/>/g, "&gt;")
+    .replace(/{/g, "&#123;")
+    .replace(/}/g, "&#125;");
 }
 
 function stripLeadingTitleHeading(source: string, title?: string) {
@@ -51,8 +54,24 @@ function normalizePromptBlocks(source: string) {
 
 function normalizeMermaidBlocks(source: string) {
   return source.replace(/```mermaid\s*\r?\n([\s\S]*?)```/g, (_, mermaidCode: string) => {
-    const diagram = escapeHtml(mermaidCode.trim());
+    const diagram = escapeHtml(mermaidCode.trim()).replace(/\r?\n/g, "&#10;");
     return `<pre className="mermaid">${diagram}</pre>\n`;
+  });
+}
+
+function normalizeQuizBlocks(source: string) {
+  return source.replace(/```quiz\s*\r?\n([\s\S]*?)```/g, (_, quizCode: string) => {
+    const quiz = parseQuizBlock(quizCode.trim());
+
+    if (!quiz) {
+      return "";
+    }
+
+    return `<div className="quiz-inline-card">
+<span className="quiz-inline-label">Treino rápido</span>
+<p>${escapeHtml(quiz.question)}</p>
+<small>${quiz.options.length} alternativas · ${quiz.timeLimit}s por pergunta · disponível na página Game</small>
+</div>\n`;
   });
 }
 
@@ -70,14 +89,16 @@ function normalizeYoutubeEmbeds(source: string) {
 }
 
 export function normalizeChirpyContent(source: string) {
-  return normalizeMermaidBlocks(
-    normalizeYoutubeEmbeds(
-      normalizePromptBlocks(source)
+  return normalizeQuizBlocks(
+    normalizeMermaidBlocks(
+      normalizeYoutubeEmbeds(
+        normalizePromptBlocks(source)
       .replace(/^\{\:\s*\.nolineno\s*\}\s*$/gm, "")
       .replace(/\)\{\:\s*target="_blank"[^}]*\}/g, ")")
       .replace(/\)\{\:\s*\.shadow\s+\.rounded-10\s*\}/g, ")")
       .replace(/^\s*\{\:\s*\.shadow\s+\.rounded-10\s*\}\s*$/gm, "")
       .replace(/<!--more-->/g, "")
+      )
     )
   );
 }

@@ -70,6 +70,8 @@ Write the lesson here.
 
 For the full authoring guide, see [documentations/markdown-authoring.md](documentations/markdown-authoring.md).
 
+Articles can also include `quiz` blocks. When a post has valid quiz blocks, the site automatically turns it into a Game training set so learners can practice from the same content. See [documentations/game-quiz.md](documentations/game-quiz.md).
+
 Use the same optional `translationKey` across translated versions of the same article. This lets the language switcher move readers between matching posts instead of guessing by slug.
 
 ## Translating The Interface

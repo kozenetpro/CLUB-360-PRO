@@ -1491,11 +1491,17 @@ body[data-route-kind="game"][data-game-mode="play"] .right-panel {
 
 .post-prose table,
 .prose table {
+  display: block;
   width: 100%;
+  max-width: 100%;
   margin: 1.75rem 0;
-  border-collapse: collapse;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border: 1px solid var(--border-color);
+  border-collapse: separate;
+  border-spacing: 0;
   border-radius: 1rem;
+  -webkit-overflow-scrolling: touch;
 }
 
 .post-prose th,
@@ -1503,8 +1509,20 @@ body[data-route-kind="game"][data-game-mode="play"] .right-panel {
 .prose th,
 .prose td {
   padding: 0.7rem 0.95rem;
-  border: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   text-align: left;
+  white-space: nowrap;
+}
+
+.post-prose tr > :last-child,
+.prose tr > :last-child {
+  border-right: 0;
+}
+
+.post-prose tbody tr:last-child > *,
+.prose tbody tr:last-child > * {
+  border-bottom: 0;
 }
 
 .post-prose th,

@@ -33,6 +33,7 @@ export const pt: Dictionary = {
     category: "Categoria",
     tag: "Tag",
     pinned: "Fixado",
+    aiGenerated: "Criado com IA",
     posted: "Publicado",
     updated: "Atualizado",
     by: "Por",

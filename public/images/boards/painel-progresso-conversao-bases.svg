@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Painel de progresso em conversão de bases</title>
+  <desc id="desc">Quadro visual para tracker de estudo</desc>
+  <rect width="1600" height="1000" fill="#f8fafc"/>
+  <text x="120" y="145" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800" fill="#0f172a">Painel de progresso</text>
+  <rect x="150" y="230" width="1300" height="580" rx="26" fill="#ffffff" stroke="#0f172a" stroke-width="5"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="42" fill="#0f172a"><text x="220" y="330">Dia 1</text><text x="220" y="455">Dia 2</text><text x="220" y="580">Dia 3</text><text x="220" y="705">Dia 4</text></g>
+  <g><rect x="450" y="290" width="360" height="48" rx="24" fill="#e2e8f0"/><rect x="450" y="290" width="180" height="48" rx="24" fill="#2563eb"/><rect x="450" y="415" width="360" height="48" rx="24" fill="#e2e8f0"/><rect x="450" y="415" width="252" height="48" rx="24" fill="#2563eb"/><rect x="450" y="540" width="360" height="48" rx="24" fill="#e2e8f0"/><rect x="450" y="540" width="324" height="48" rx="24" fill="#2563eb"/><rect x="450" y="665" width="360" height="48" rx="24" fill="#e2e8f0"/><rect x="450" y="665" width="360" height="48" rx="24" fill="#16a34a"/></g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="40" fill="#334155"><text x="900" y="330">5/10 • 25 min</text><text x="900" y="455">7/10 • 20 min</text><text x="900" y="580">9/10 • 15 min</text><text x="900" y="705">10/10 • 12 min</text></g>
+</svg>

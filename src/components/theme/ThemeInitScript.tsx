@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 export default function ThemeInitScript() {
   const script = `
     (function() {
@@ -14,5 +16,11 @@ export default function ThemeInitScript() {
     })();
   `;
 
-  return <script dangerouslySetInnerHTML={{ __html: script }} />;
+  return (
+    <Script
+      id="theme-init"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{ __html: script }}
+    />
+  );
 }

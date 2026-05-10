@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Octal 347 para decimal</title>
+  <desc id="desc">Quadro visual para conversão de octal para decimal</desc>
+  <rect width="1600" height="1000" fill="#fff7ed"/>
+  <text x="120" y="150" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800" fill="#0f172a">Octal para decimal</text>
+  <text x="270" y="355" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="92" fill="#ea580c">3    4    7</text>
+  <text x="270" y="475" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="72" fill="#64748b">8²   8¹   8⁰</text>
+  <text x="210" y="650" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="64" fill="#0f172a">3×64 + 4×8 + 7×1 = 231</text>
+  <text x="430" y="820" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="74" font-weight="800" fill="#16a34a">347₈ = 231₁₀</text>
+</svg>

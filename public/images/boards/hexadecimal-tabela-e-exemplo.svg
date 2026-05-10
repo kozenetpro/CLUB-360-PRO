@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Hexadecimal tabela e exemplo</title>
+  <desc id="desc">Quadro visual para tabela hexadecimal e exemplo 2A</desc>
+  <rect width="1600" height="1000" fill="#fef2f2"/>
+  <text x="110" y="140" font-family="Inter, Arial, sans-serif" font-size="70" font-weight="800" fill="#0f172a">Hexadecimal sem medo</text>
+  <text x="150" y="275" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="54" fill="#dc2626">A=10  B=11  C=12</text>
+  <text x="150" y="360" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="54" fill="#dc2626">D=13  E=14  F=15</text>
+  <rect x="760" y="230" width="650" height="500" rx="28" fill="#ffffff" stroke="#dc2626" stroke-width="7"/>
+  <text x="845" y="385" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="88" fill="#0f172a">2A₁₆</text>
+  <text x="845" y="515" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="56" fill="#334155">2×16 + 10×1</text>
+  <text x="845" y="650" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="70" font-weight="800" fill="#16a34a">= 42₁₀</text>
+</svg>

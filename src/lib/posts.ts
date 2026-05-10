@@ -29,6 +29,7 @@ export interface PostMeta {
   imageHeight?: number;
   mermaid?: boolean;
   pin?: boolean;
+  aiGenerated?: boolean;
   readingTime: string;
   lastModified?: string;
   translationKey?: string;
@@ -177,6 +178,7 @@ export function getAllPosts(): PostMeta[] {
       imageHeight,
       mermaid: Boolean(data.mermaid),
       pin: Boolean(data.pin),
+      aiGenerated: Boolean(data.aiGenerated),
       readingTime: stats.text,
       lastModified: data.lastModified ? toDateString(data.lastModified) : toDateString(data.date),
       translationKey: typeof data.translationKey === "string" ? data.translationKey : undefined,
@@ -231,6 +233,7 @@ export function getPostBySlug(slug: string): Post | null {
     imageHeight,
     mermaid: Boolean(data.mermaid),
     pin: Boolean(data.pin),
+    aiGenerated: Boolean(data.aiGenerated),
     readingTime: stats.text,
     lastModified: data.lastModified ? toDateString(data.lastModified) : toDateString(data.date),
     translationKey: typeof data.translationKey === "string" ? data.translationKey : undefined,

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Binário para decimal passo 1</title>
+  <desc id="desc">Quadro visual para primeiro passo da conversão 1011 base 2</desc>
+  <rect width="1600" height="1000" fill="#f8fafc"/>
+  <text x="120" y="155" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800" fill="#0f172a">Step 1: qual é o número?</text>
+  <rect x="230" y="280" width="1140" height="360" rx="28" fill="#ffffff" stroke="#2563eb" stroke-width="8"/>
+  <text x="455" y="515" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="120" font-weight="800" fill="#2563eb">1011₂</text>
+  <text x="375" y="745" font-family="Inter, Arial, sans-serif" font-size="48" fill="#334155">Pergunta: quanto vale em decimal?</text>
+</svg>

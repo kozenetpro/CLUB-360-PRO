@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Mapa mental dos macetes de conversão</title>
+  <desc id="desc">Quadro visual para mapa mental de conversão de bases</desc>
+  <rect width="1600" height="1000" fill="#f8fafc"/>
+  <circle cx="800" cy="500" r="155" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+  <text x="800" y="485" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" fill="#0f172a">Conversão</text>
+  <text x="800" y="545" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" fill="#0f172a">de bases</text>
+  <path d="M660 430L300 245M940 430l360-185M660 580L300 760M940 580l360 180" stroke="#94a3b8" stroke-width="8"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700" fill="#0f172a"><rect x="90" y="145" width="460" height="170" rx="24" fill="#dbeafe"/><text x="145" y="240">Pesos + soma</text><rect x="1050" y="145" width="460" height="170" rx="24" fill="#dcfce7"/><text x="1105" y="240">Divisão + restos</text><rect x="90" y="680" width="460" height="170" rx="24" fill="#fff7ed"/><text x="145" y="775">A até F</text><rect x="1050" y="680" width="460" height="170" rx="24" fill="#fef2f2"/><text x="1105" y="775">Baixo para cima</text></g>
+</svg>

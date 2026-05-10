@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Decimal 255 para hexadecimal</title>
+  <desc id="desc">Quadro visual para conversão de 255 decimal para hexadecimal</desc>
+  <rect width="1600" height="1000" fill="#fef2f2"/>
+  <text x="120" y="150" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800" fill="#0f172a">Decimal para hexadecimal</text>
+  <text x="230" y="340" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="66" fill="#0f172a">255 ÷ 16 = 15 resto 15</text>
+  <text x="230" y="460" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="66" fill="#0f172a">15 ÷ 16 = 0 resto 15</text>
+  <text x="410" y="620" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="70" fill="#dc2626">15 = F</text>
+  <rect x="470" y="700" width="660" height="160" rx="24" fill="#ffffff" stroke="#dc2626" stroke-width="8"/>
+  <text x="545" y="810" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="72" font-weight="800" fill="#16a34a">255₁₀ = FF₁₆</text>
+</svg>

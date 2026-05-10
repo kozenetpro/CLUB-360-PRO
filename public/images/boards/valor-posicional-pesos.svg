@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Valor posicional e pesos</title>
+  <desc id="desc">Quadro visual para board de valor posicional</desc>
+  <rect width="1600" height="1000" fill="#fffdf7"/>
+  <text x="110" y="140" font-family="Inter, Arial, sans-serif" font-size="70" font-weight="800" fill="#0f172a">Valor posicional</text>
+  <text x="210" y="330" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="74" fill="#2563eb">2    5    3</text>
+  <text x="210" y="425" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="58" fill="#64748b">10²  10¹  10⁰</text>
+  <text x="210" y="650" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="74" fill="#16a34a">1    0    1    1</text>
+  <text x="210" y="745" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="58" fill="#64748b">2³   2²   2¹   2⁰</text>
+  <text x="900" y="520" font-family="Inter, Arial, sans-serif" font-size="44" fill="#334155">Cada posição tem um peso.</text>
+</svg>

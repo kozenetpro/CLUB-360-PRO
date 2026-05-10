@@ -20,6 +20,7 @@ export function getSerializablePosts(lang: string): PostMeta[] {
     imageHeight: typeof post.imageHeight === "number" ? post.imageHeight : undefined,
     mermaid: Boolean(post.mermaid),
     pin: Boolean(post.pin),
+    aiGenerated: Boolean(post.aiGenerated),
     readingTime: String(post.readingTime || "1 min read"),
     lastModified: typeof post.lastModified === "string" ? post.lastModified : undefined,
     translationKey: typeof post.translationKey === "string" ? post.translationKey : undefined,

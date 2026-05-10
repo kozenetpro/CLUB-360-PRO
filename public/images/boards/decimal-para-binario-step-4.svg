@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Decimal para binário passo 4</title>
+  <desc id="desc">Quadro visual para leitura de baixo para cima</desc>
+  <rect width="1600" height="1000" fill="#f0fdf4"/>
+  <text x="120" y="155" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800" fill="#0f172a">Step 4: leia de baixo para cima</text>
+  <path d="M1060 700C860 590 720 460 610 270" fill="none" stroke="#16a34a" stroke-width="18" stroke-linecap="round"/>
+  <path d="M610 270l8 96 82-50" fill="none" stroke="#16a34a" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="445" y="520" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="116" font-weight="800" fill="#166534">1101₂</text>
+  <text x="455" y="725" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="70" fill="#0f172a">13₁₀ = 1101₂</text>
+</svg>

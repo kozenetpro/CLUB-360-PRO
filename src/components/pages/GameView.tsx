@@ -88,22 +88,7 @@ export default function GameView({ locale, trainingSets, initialSetId }: GameVie
   const [zoomLevel, setZoomLevel] = useState(100);
   const [focusMode, setFocusMode] = useState(false);
   const [shareStatus, setShareStatus] = useState("");
-  const [bestScores, setBestScores] = useState<Record<string, number>>(() => {
-    if (typeof window === "undefined") {
-      return {};
-    }
-
-    const storedScores: Record<string, number> = {};
-
-    trainingSets.forEach((set) => {
-      const score = Number(window.localStorage.getItem(getBestKey(set.id)));
-      if (Number.isFinite(score)) {
-        storedScores[set.id] = score;
-      }
-    });
-
-    return storedScores;
-  });
+  const [bestScores, setBestScores] = useState<Record<string, number>>({});
 
   const selectedSet = useMemo(
     () => trainingSets.find((set) => set.id === selectedSetId) ?? null,
@@ -122,6 +107,30 @@ export default function GameView({ locale, trainingSets, initialSetId }: GameVie
       delete document.body.dataset.gameMode;
     };
   }, [selectedSet]);
+
+  useEffect(() => {
+    const frame = window.requestAnimationFrame(() => {
+      const storedScores: Record<string, number> = {};
+
+      trainingSets.forEach((set) => {
+        const storedScore = window.localStorage.getItem(getBestKey(set.id));
+
+        if (storedScore === null) {
+          return;
+        }
+
+        const score = Number(storedScore);
+
+        if (Number.isFinite(score)) {
+          storedScores[set.id] = score;
+        }
+      });
+
+      setBestScores(storedScores);
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, [trainingSets]);
 
   useEffect(() => {
     const syncFullscreen = () => {

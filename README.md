@@ -58,6 +58,7 @@ description: "Short summary for previews and SEO."
 date: 2026-05-04
 categories: ["Programming"]
 tags: ["javascript", "beginner"]
+aiGenerated: false
 collaborators:
   - name: "Your Name"
     src: "https://avatars.githubusercontent.com/u/YOUR_ID"

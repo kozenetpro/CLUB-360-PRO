@@ -31,6 +31,7 @@ export const en = {
     category: "Category",
     tag: "Tag",
     pinned: "Pinned",
+    aiGenerated: "AI assisted",
     posted: "Posted",
     updated: "Updated",
     by: "By",

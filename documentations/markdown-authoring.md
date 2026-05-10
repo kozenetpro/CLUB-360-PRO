@@ -39,6 +39,7 @@ date: 2026-05-03
 translationKey: my-post-title
 categories: ["Teaching", "Coaching"]
 tags: ["demo", "beginner-friendly"]
+aiGenerated: false
 collaborators:
   - name: "Your Name"
     src: "https://avatars.githubusercontent.com/u/YOUR_ID"
@@ -54,6 +55,8 @@ Content here.
 ```
 
 If the markdown H1 matches the frontmatter title, the site automatically removes the duplicated in-article title on the rendered page.
+
+Set `aiGenerated: true` when a post was created primarily with AI assistance. Cards will show a translated AI badge automatically.
 
 ## Cover Images
 

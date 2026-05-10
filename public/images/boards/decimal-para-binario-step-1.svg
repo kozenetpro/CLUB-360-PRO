@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Decimal para binário passo 1</title>
+  <desc id="desc">Quadro visual para primeiro passo de decimal para binário</desc>
+  <rect width="1600" height="1000" fill="#eff6ff"/>
+  <text x="120" y="155" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800" fill="#0f172a">Step 1: base desejada</text>
+  <rect x="250" y="300" width="1100" height="330" rx="28" fill="#ffffff" stroke="#2563eb" stroke-width="8"/>
+  <text x="425" y="505" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="100" font-weight="800" fill="#2563eb">13₁₀ → ?₂</text>
+  <text x="395" y="760" font-family="Inter, Arial, sans-serif" font-size="48" fill="#334155">Queremos binário, então dividimos por 2.</text>
+</svg>

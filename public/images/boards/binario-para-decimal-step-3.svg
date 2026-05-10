@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Binário para decimal passo 3</title>
+  <desc id="desc">Quadro visual para terceiro passo da conversão 1011 base 2</desc>
+  <rect width="1600" height="1000" fill="#f8fafc"/>
+  <text x="120" y="155" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800" fill="#0f172a">Step 3: multiplique</text>
+  <text x="160" y="420" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="74" fill="#2563eb">1×8 + 0×4 + 1×2 + 1×1</text>
+  <path d="M240 480h1120" stroke="#f59e0b" stroke-width="18" stroke-linecap="round"/>
+  <text x="260" y="650" font-family="Inter, Arial, sans-serif" font-size="48" fill="#334155">Cada dígito entra na conta com seu peso.</text>
+</svg>

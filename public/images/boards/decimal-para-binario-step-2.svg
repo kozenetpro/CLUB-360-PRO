@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Decimal para binário passo 2</title>
+  <desc id="desc">Quadro visual para divisões sucessivas por 2</desc>
+  <rect width="1600" height="1000" fill="#f8fafc"/>
+  <text x="120" y="155" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800" fill="#0f172a">Step 2: divida por 2</text>
+  <text x="280" y="320" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="58" fill="#0f172a">13 ÷ 2 = 6 resto 1</text>
+  <text x="280" y="430" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="58" fill="#0f172a">6 ÷ 2 = 3 resto 0</text>
+  <text x="280" y="540" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="58" fill="#0f172a">3 ÷ 2 = 1 resto 1</text>
+  <text x="280" y="650" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="58" fill="#0f172a">1 ÷ 2 = 0 resto 1</text>
+  <text x="280" y="815" font-family="Inter, Arial, sans-serif" font-size="44" fill="#334155">Pare quando o quociente chegar a zero.</text>
+</svg>

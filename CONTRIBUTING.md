@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for helping Club 360 Pro grow as an open learning project.
+Thank you for helping Club Kozenet Pro grow as an open learning project.
 
 ## What You Can Contribute
 

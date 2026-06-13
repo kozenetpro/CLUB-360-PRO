@@ -2,11 +2,11 @@
   "name": "club360-pro",
   "version": "0.1.0",
   "private": true,
-  "description": "Open-source Club 360 Pro learning community blog.",
+  "description": "Open-source Club Kozenet Pro learning community blog.",
   "packageManager": "npm@11.11.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kozenetpro/club360-pro.git"
+    "url": "https://github.com/kozenetpro/CLUB-360-PRO"
   },
   "license": "MIT",
   "overrides": {

@@ -4,12 +4,12 @@ export const en = {
     shortRole: "Community · Mathematics · Programming · Algorithms",
     profileRole: "Community · Mathematics · Programming · Algorithms",
     description:
-      "Club 360 Pro is an open learning community where students, developers, and creators publish practical notes, projects, and technical lessons together.",
+      "Club Kozenet Pro is an open learning community where students, developers, and creators publish practical notes, projects, and technical lessons together.",
     about: {
       summary:
-        "Club 360 Pro is a community for students, developers, and creators who learn in public by writing, reviewing, and improving technical content together.",
+        "Club Kozenet Pro is a community for students, developers, and creators who learn in public by writing, reviewing, and improving technical content together.",
       details: [
-        "This is a space for Club 360 Pro members to share what they are learning, what they are building, and how they are growing through real projects, technical notes, and hands-on experimentation.",
+        "This is a space for Club Kozenet Pro members to share what they are learning, what they are building, and how they are growing through real projects, technical notes, and hands-on experimentation.",
         "We focus on foundations that matter for modern technology: programming, algorithms, mathematics, cloud, cybersecurity, networking, AI, data, and collaborative engineering practice.",
         "Our goal is to help contributors build a public portfolio while making useful learning material available to everyone.",
       ],

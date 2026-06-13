@@ -1,4 +1,4 @@
-# Markdown Authoring README for Club 360 Pro
+# Markdown Authoring README for Club Kozenet Pro
 
 This is the practical guide for creating content in this site.
 

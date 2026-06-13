@@ -1,4 +1,4 @@
-# Board Content Guide for Club 360 Pro
+# Board Content Guide for Club Kozenet Pro
 
 This guide is for lesson-style content:
 

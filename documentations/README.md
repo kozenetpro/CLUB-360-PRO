@@ -1,4 +1,4 @@
-# Club 360 Pro Documentation
+# Club Kozenet Pro Documentation
 
 Start here when contributing content or maintaining the site.
 

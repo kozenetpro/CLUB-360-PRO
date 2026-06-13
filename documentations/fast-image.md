@@ -1,4 +1,4 @@
-# Fast Image Guide for Club 360 Pro
+# Fast Image Guide for Club Kozenet Pro
 
 This guide adapts the DigitalDenCloud LQIP + WebP workflow to your Next.js site.
 

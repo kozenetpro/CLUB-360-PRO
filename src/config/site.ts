@@ -17,11 +17,11 @@ export const siteRoutes = {
 } as const;
 
 export const siteConfig = {
-  name: "CLUB 360 PRO",
-  title: "CLUB 360 PRO",
+  name: "CLUB KOZENET PRO",
+  title: "CLUB KOZENET PRO",
   avatar: "/images/AVATAR.png",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://club360.kozenetpro.com",
-  repositoryUrl: "https://github.com/kozenetpro/club360-pro",
+  repositoryUrl: "https://github.com/kozenetpro/CLUB-360-PRO",
   socialLinks: [
     { href: "https://github.com/kozenetpro/club360-pro", label: "GitHub", icon: "github" },
     { href: "https://club360.kozenetpro.com", label: "Website", icon: "website" },

@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     "cloud architecture",
     "generative ai",
     "marathon",
-    "club 360 pro",
+    "club pro",
   ],
   openGraph: {
     title: siteConfig.title,

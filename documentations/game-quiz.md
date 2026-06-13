@@ -1,6 +1,6 @@
 # Game and Quiz Authoring Guide
 
-This guide explains how Club 360 Pro turns article questions into interactive Game training.
+This guide explains how Club Kozenet Pro turns article questions into interactive Game training.
 
 The goal is simple:
 

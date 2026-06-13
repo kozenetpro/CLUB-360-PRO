@@ -1,6 +1,6 @@
-# Club 360 Pro
+# Club Kozenet Pro
 
-Open-source community blog for Club 360 Pro. Students and members can contribute lessons, translations, technical notes, diagrams, and project write-ups through GitHub pull requests.
+Open-source community blog for Club Kozenet Pro. Students and members can contribute lessons, translations, technical notes, diagrams, and project write-ups through GitHub pull requests.
 
 Production domain target: `https://club360.kozenetpro.com`
 
